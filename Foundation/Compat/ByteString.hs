@@ -1,5 +1,5 @@
 -- |
--- Module      : Core.Compat.ByteString
+-- Module      : Foundation.Compat.ByteString
 -- License     : BSD-style
 -- Maintainer  : Foundation
 -- Stability   : experimental
@@ -7,15 +7,15 @@
 --
 -- Module to convert bytestring's ByteString type
 {-# LANGUAGE ViewPatterns #-}
-module Core.Compat.ByteString
+module Foundation.Compat.ByteString
     ( fromByteString
     ) where
 
 import Data.ByteString (ByteString)
 import Data.ByteString.Internal (toForeignPtr)
-import Core
-import Core.Array
-import Core.Array.Internal
+import Foundation
+import Foundation.Array
+import Foundation.Array.Internal
 
 -- | Convert a ByteString to a UArray Word8,
 -- without re-allocating or copying anything
