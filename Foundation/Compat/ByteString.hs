@@ -9,9 +9,10 @@
 {-# LANGUAGE ViewPatterns #-}
 module Foundation.Compat.ByteString
     ( fromByteString
+    , toByteString
     ) where
 
-import Data.ByteString (ByteString)
+import Data.ByteString (ByteString, pack)
 import Data.ByteString.Internal (toForeignPtr)
 import Foundation
 import Foundation.Array.Internal
@@ -20,3 +21,7 @@ import Foundation.Array.Internal
 -- without re-allocating or copying anything
 fromByteString :: ByteString -> UArray Word8
 fromByteString = fromForeignPtr . toForeignPtr
+
+-- | Convert a UArray Word8 to a ByteString.
+toByteString :: UArray Word8 -> ByteString
+toByteString = pack . toList
