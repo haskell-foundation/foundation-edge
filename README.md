@@ -7,10 +7,10 @@ the haskell ecosystem.
 For now, edge support the following packages:
 
 * bytestring (incomplete)
+* text (incomplete)
 
 And planning to add support to:
 
-* text
 * vector
 
 If you think edge would benefits from other packages, open an issue (or even better a PR) with
