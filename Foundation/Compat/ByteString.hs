@@ -14,7 +14,6 @@ module Foundation.Compat.ByteString
 import Data.ByteString (ByteString)
 import Data.ByteString.Internal (toForeignPtr)
 import Foundation
-import Foundation.Array
 import Foundation.Array.Internal
 
 -- | Convert a ByteString to a UArray Word8,
