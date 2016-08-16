@@ -6,8 +6,8 @@ the haskell ecosystem.
 
 For now, edge support the following packages:
 
-* bytestring (incomplete)
-* text (incomplete)
+* bytestring (initial)
+* text (initial)
 
 And planning to add support to:
 
