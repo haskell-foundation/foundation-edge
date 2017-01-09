@@ -9,6 +9,7 @@
 {-# LANGUAGE ViewPatterns #-}
 module Foundation.Compat.ByteString
     ( fromByteString
+    , toByteString
     ) where
 
 import Data.ByteString (ByteString)
