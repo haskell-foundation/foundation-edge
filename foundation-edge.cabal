@@ -33,7 +33,7 @@ Library
                       TypeFamilies
                       BangPatterns
                       DeriveDataTypeable
-  Build-depends:      foundation
+  Build-depends:      foundation >= 0.0.7
                     , bytestring
                     , text
   ghc-options:        -Wall
